@@ -1,0 +1,169 @@
+/*
+* Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See License.txt in the project root.
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#content {
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    padding: 15px;
+}
+
+#header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:auto;
+    padding: 5px;
+    background-color: #0078d7;
+    color: #ffffff;
+    /*    font-family: 'Segoe UI', Arial, Tahoma;*/
+    font-weight: 100;
+}
+
+#navigation {
+    padding: 15px;
+}
+
+canvas {
+    position: relative;
+    left: 0;
+    width: 270px;
+    height: 190px;
+    border-radius: 4px;
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.02)*/
+    border: 1px solid #3498DB;
+    border-style: inset;
+}
+
+span.font {
+  color: #0078d7;
+  font-weight:bold;
+}
+li {
+   /* font-family: 'Times New Roman';*/
+}
+
+.signature-pad--actions {
+    float: right;
+}
+/* Create Signature  button Section */
+
+#create {
+    background-color: RoyalBlue;
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+}
+
+    #create:hover {
+        background-color: RoyalBlue;
+    }
+
+/* Undo, Clear, Save button for canvas*/
+
+#clear, #undo, #save,#changecolor{
+    background-color: RoyalBlue;
+    color: black;
+    padding: 10px 8px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+    #clear:hover, #undo:hover, #save:hover,#changecolor:hover{
+        background-color: RoyalBlue;
+    }
+
+/*Alert Box*/
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.8;
+    display: none;
+}
+
+#dialog {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    width: 240px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    display: none;
+    padding: 10px;
+}
+
+    #dialog h2 {
+        margin: 0;
+        padding: 5px;
+        border-radius: 3px;
+        background: #ddd;
+        font-size: 17px;
+    }
+
+        #dialog h2 span {
+            display: block;
+            float: right;
+            padding: 0 5px;
+            color: #c22;
+            cursor: pointer;
+        }
+
+div#message {
+    padding: 2px;
+}
+
+h4#content {
+    padding: 0 0 10px 0;
+    color: black;
+    font-size: 16px;
+    font-family: 'Segoe UI Regular WestEuropean', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif;
+}
+
+/* Notification */
+
+#notification-message {
+    background-color: #818285;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    min-height: 80px;
+    right: 0;
+    z-index: 100;
+    bottom: 0;
+    display: none; /* Hidden until invoked */
+}
+
+    #notification-message #notification-message-header {
+        font-size: medium;
+        margin-bottom: 10px;
+    }
+
+    #notification-message #notification-message-close {
+        background-image: url("../Images/Close.png");
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+    }
